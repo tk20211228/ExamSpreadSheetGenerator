@@ -1,0 +1,39 @@
+  <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
+  <style>
+    h1 {font-size:16pt; background:#AAFFAA;padding:5px;}
+    p {margin:10px;}
+  </style>
+
+  <h1>報告書</h1>
+  <p>
+  HTML ServicesとCSSでデコレートしたメッセージボックスだよ。
+    </p>
+  <p>
+  -------------------------------------------------------
+  </p>
+  <p>
+    <!--できればbrなどの改行は使いすぎない
+    　　　少し注意点があります。それは「違うサイズのウィンドウで見たときに、中途半端な位置で改行されてしまう可能性がある」ということ
+    -->
+  HTML表示なので、jQueryやBootstrapなどのUIライブラリももちろん利用出来ます。<br>CSSで加工も出来ます。
+  ダイアログボックスを閉じる時には、ボタンに対してonClickイベントにて、google.script.host.close()を指定する事で閉じる事が可能になります。
+  </p>
+  <p>
+  -------------------------------------------------------
+  </p>
+  <p>
+    <!--メッセージボックス内にハイパーリンク-->
+    <a href="https://www.isb.co.jp/" target="blank">TESTリンク（ISBサイト）です</a>
+    </p>
+    <p>
+    <!--メッセージボックス内にハイパーリンク-->
+    <a href="http://pb.ap.vectant.ne.jp/sdmtest/index.htm" target="blank">TESTリンク（MDMテストサイト）です</a>
+    </p>
+    <p>
+    <!--メッセージボックス内にハイパーリンク-->
+    <a href="https://env.b4iine.net/" target="blank">TESTリンク（確認くんサイト）です</a>
+    </p>
+  <div align="center">
+    <input type="button" class="action" value="メッセージを閉じる"
+    onclick="google.script.host.close()" />
+  </div>
