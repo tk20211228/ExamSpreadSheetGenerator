@@ -1,0 +1,2 @@
+# ExamSpreadSheetGenerator
+専用に作成したスプレッドシートで動作します。
