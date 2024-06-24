@@ -139,10 +139,10 @@ function createRecord(e) {
         }
       }
       if(cellNewword != ''){
-        var value = ['',cellID,cellChangedplaces,cellOldword,cellNewword,'',alterDate,fullName];
+        var value = ['',cellID,cellChangedplaces,cellOldword,cellNewword,'',alterDate,user];
         sheetRecord.appendRow(value);
         sheetRecord.getFilter().sort(7 , false);
-        var valueMasterRecord =[[cellChangedplaces,alterDate,fullName]];
+        var valueMasterRecord =[[cellChangedplaces,alterDate,user]];
         
         sheet.getRange(cellRow+n,colFilterNo+1,1,3).setValues(valueMasterRecord).setWrapStrategy(SpreadsheetApp.WrapStrategy.CLIP).setHorizontalAlignment('left'); //切り詰める
       }
